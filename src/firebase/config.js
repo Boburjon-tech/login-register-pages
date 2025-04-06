@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyCKjbL8MerKVSIbiOR39ApY8-uzEx5qdeY",
   authDomain: "recepies-a7807.firebaseapp.com",
@@ -15,3 +16,4 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 export const auth = getAuth()
+export const db = getFirestore()
